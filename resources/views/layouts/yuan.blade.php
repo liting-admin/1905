@@ -86,16 +86,16 @@
     <dt>综合查询</dt>
     <dd><a href="setting.html">客户查询</a></dd>
     <dd><a href="setting.html">客户服务记录查询</a></dd>
-     <dd><a href="setting.html">客户投诉记录查询</a></dd>
-      <dd><a href="setting.html">客户报价查询</a></dd>
+     <dd><a href="{{url('/index/setting')}}">客户投诉记录查询</a></dd>
+      <dd><a href="{{url('/index/offer')}}">客户报价查询</a></dd>
    </dl>
   </li>
    <p class="btm_infor">© DeathGhost.cn 版权所有</p>
   </li>
  </ul>
 </aside>
- @yield('content')
+@yield('content')
 
-</script>
+    </script>
 </body>
 </html>
