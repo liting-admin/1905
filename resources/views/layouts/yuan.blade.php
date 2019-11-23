@@ -78,7 +78,7 @@
   <li>
    <dl>
     <dt>客户服务记录</dt>
-    <dd><a href="setting.html">客户服务记录</a></dd>
+    <dd><a href="{{url('/redcord/create')}}">客户服务记录</a></dd>
    </dl>
   </li>
   <li>
