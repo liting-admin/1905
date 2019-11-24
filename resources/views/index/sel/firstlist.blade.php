@@ -1,3 +1,4 @@
+
 @extends('layouts.yuan')
 @section('title', '运营大厦')
 @section('content') 
@@ -18,7 +19,7 @@
         <th>企业性质</th>
         <th>企业描述</th>
        </tr>
-       @foreach($res as $k=>$v)
+       @foreach($res as $v)
       <tr>
       <td>{{$v->client_name}}</td>
       <td>{{$v->client_ma}}</td>
@@ -28,9 +29,9 @@
       <td>{{$v->shuxing}}</td>
       <td>{{$v->xingzhi}}</td>
       <td>{{$v->desc}}</td>
-      <td></td>
+      
        </tr>
-       @foreach
+       @endforeach
       </table>
       <aside class="paging">
        <a>第一页</a>

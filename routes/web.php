@@ -16,11 +16,11 @@ Route::get('/', function () {
 });
 Route::get('index/index','Index\Index@index');
 
-Route::get('index/sel','Index\Sel@index');
-Route::get('index/sell','Index\Sell@index');
-Route::get('index/sel','Index\Sel@indexs');
+Route::get('/index/Sel/index','Index\Sel@index');
+Route::get('/index/Sell/index','Index\Sell@index');
+Route::post('/index/Sel/indexs','Index\Sel@indexs');
 
-
+   
 
 Route::get('index/reg','Index\AdminController@reg');
 
@@ -51,6 +51,3 @@ Route::get('index/product','Index\OfferController@lists');
 //客户服务记录
 Route::get("/redcord/create","Index\RedcordController@create");
 Route::post("/redcord/store","Index\RedcordController@store");
->>>>>>> 565271137b0dcc971d0e64d48d3c073dd1a74088
->>>>>>> dc16844f2f2bfc83ba2ab544f91f9aba521dfab2
->>>>>>> 39da496d0074d1d94c4a9ff30090c374638bcd99

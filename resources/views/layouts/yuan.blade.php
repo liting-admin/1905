@@ -85,21 +85,11 @@
   <li>
    <dl>
     <dt>综合查询</dt>
-<<<<<<< HEAD
-    <dd><a href="{{url('Sel/index')}}">客户查询</a></dd>
-    <dd><a href="{{url('sell/index')}}">客户服务记录查询</a></dd>
-     <dd><a href="setting.html">客户投诉记录查询</a></dd>
-      <dd><a href="setting.html">客户报价 查询</a></dd>
-=======
-    <dd><a href="setting.html">客户查询</a></dd>
-    <dd><a href="setting.html">客户服务记录查询</a></dd>
-     <dd><a href="{{url('/index/setting')}}">客户投诉记录查询</a></dd>
-      <dd><a href="{{url('/index/offer')}}">客户报价查询</a></dd>
->>>>>>> 39da496d0074d1d94c4a9ff30090c374638bcd99
+    <dd><a href="{{url('/index/Sel/index')}}">综合查询</a></dd>
+   
+
    </dl>
-  </li>
-   <p class="btm_infor">© DeathGhost.cn 版权所有</p>
-  </li>
+ 
  </ul>
 </aside>
 @yield('content')

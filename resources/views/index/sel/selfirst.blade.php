@@ -3,68 +3,47 @@
 @section('content') 
 <section class="rt_wrap content mCustomScrollbar">
   <h1><b>LiTing的STUDIO</b></h1>
-
+  <form action="{{url('/index/Sel/indexs')}}" method="post">
+  @csrf
       <div class="page_title">
        <h2 class="fl">销售部门，人员</h2>
       </div>
       <table class="table">
        <tr>
-        <td>销售部门：
-          <select>
-              <option value="0">---请选择---</option>
-        </select>
-      </td>
-        <td>销售人员：
-            <select>
-             <option value="0">---请选择---</option>
-        </select>
+        <td>销售人员：<input type="text" name="id">
         </td>
-        <td>
-        <input type="button" name="" value="查询">
-      </td>
        </tr>
       </table>
-
- 
       <div class="page_title">
        <h2 class="fl">客户信息</h2>
       </div>
       <table class="table">
        <tr>
-        <td>客户名称：<input type="text" name=""></td>
-        <td>客户编码：<input type="text" name=""></td>
-        <td>客户简称：<input type="text" name=""></td>
+        <td>客户名称：<input type="text" name="client_name"></td>
+        <td>客户编码：<input type="text" name="client_ma"></td>
+        <td>客户简称：<input type="text" name="client_jian"></td>
         <tr>
-          <td>地区：<select>
-                <option value="0">---请选择---</option>
-       </select></td>
-       <td>地址：<input type="text" name=""></td>
-       <td>电话：<input type="text" name=""></td>
+        <td>客户来源：
+        <input type="text" name="com">
+       </td>
+        
+        <td>销售方式：
+        <input type="text" name="fangshi">
+        </td>
         </tr>
-        <tr>
-        <td>客户来源：<select>
-             <option value="0">---请选择---</option>
-        </select></td>
-        <td>客户类别：<select>
-             <option value="0">---请选择---</option>
-        </select></td>
-        <td>销售方式：<select>
-             <option value="0">---请选择---</option>
-        </select></td>
-        </tr>
-        <td>行业属性：<select>
-             <option value="0">---请选择---</option>
-        </select></td>
-        <td>企业性质：<select>
-             <option value="0">---请选择---</option>
-        </select></td>
-        <td>企业描述：<select>
-             <option value="0">---请选择---</option>
-        </select>
-        <b><input type="button" name="" value="查询"></b></td>
+        <td>行业属性：
+        <input type="text" name="shuxing">
+        </td>
+        <td>企业性质：
+        <input type="text" name="xingzhi">
+        </td>
+        <td>企业描述：
+        <input type="text" name=desc">
+        
+        <b><input type="submit" name="" value="查询"></b></td>
        </tr>
       </table>
-
+</form>
  
       <div class="page_title">
        <h2 class="fl">联系人信息
@@ -75,7 +54,9 @@
         <td>
             性别：<select>
                  <option value="0">---请选择---</option>
-
+                 <option value="0">男</option>
+                 <option value="0">女</option>
+                
             </select>
         </td>
         <td>爱好：<input type="text" name="">
@@ -93,6 +74,8 @@
         <td>服务类型：
           <select>
               <option value="0">---请选择---</option>
+              <option value="0">五星</option>
+              <option value="0">一星</option>
         </select>
       </td>
         <td>服务日期：<input type="text" name="">至<input type="text" name="">
@@ -101,6 +84,8 @@
         <td>客户满意度：
           <select>
               <option value="0">---请选择---</option>
+              <option value="0">好</option>
+              <option value="0">坏</option>
         </select>
       </td>
       <td>服务内容：
@@ -114,7 +99,10 @@
       
       </table>
 
+ 
+
 </section>
 </body>
 </html>
+
   @endsection
