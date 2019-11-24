@@ -18,6 +18,7 @@
         <th>企业性质</th>
         <th>企业描述</th>
        </tr>
+       @foreach($res as $k=>$v)
       <tr>
       <td>{{$v->client_name}}</td>
       <td>{{$v->client_ma}}</td>
@@ -29,6 +30,7 @@
       <td>{{$v->desc}}</td>
       <td></td>
        </tr>
+       @foreach
       </table>
       <aside class="paging">
        <a>第一页</a>
