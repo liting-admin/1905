@@ -15,3 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('index/index','Index\Index@index');
+Route::get('index/sel','Index\Sel@index');
+Route::get('index/sell','Index\Sell@index');
+Route::get('index/sel','Index\Sel@indexs');
