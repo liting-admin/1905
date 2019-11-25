@@ -10,25 +10,17 @@
       </div>
       <table class="table">
        <tr>
-        <th>客户名称</th>
-        <th>客户编码</th>
-        <th>客户简称</th>
-        <th>销售方式/th>
-        <th>客户来源</th>
-        <th>行业属性</th>
-        <th>企业性质</th>
-        <th>企业描述</th>
+        <th>服务类型</th>
+        <th>客户服务满意度</th>
+        <th>日期</th>
+        <th>服务内容</th>
        </tr>
        @foreach($res as $v)
       <tr>
-      <td>{{$v->client_name}}</td>
-      <td>{{$v->client_ma}}</td>
-      <td>{{$v->client_jian}}</td>
-      <td>{{$v->fangshi}}</td>
-      <td>{{$v->com}}</td>
-      <td>{{$v->shuxing}}</td>
-      <td>{{$v->xingzhi}}</td>
-      <td>{{$v->desc}}</td>
+      <td>{{$v->serve_type=='1'?'上门服务':'解决客户投诉'}}</td>
+      <td>{{$v->serve_satis=='2'?'很满意':'好'}}</td>
+      <td>{{date('Y-m-d H:i:s',$v->serve_time)}}</td>
+      <td>{{$v->serve_desc}}</td>
       
        </tr>
        @endforeach

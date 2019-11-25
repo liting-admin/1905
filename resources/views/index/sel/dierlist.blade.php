@@ -10,26 +10,16 @@
       </div>
       <table class="table">
        <tr>
-        <th>客户名称</th>
-        <th>客户编码</th>
-        <th>客户简称</th>
-        <th>销售方式/th>
-        <th>客户来源</th>
-        <th>行业属性</th>
-        <th>企业性质</th>
-        <th>企业描述</th>
+        <th>联系人名称</th>
+        <th>性别</th>
+        <th>爱好</th>
+     
        </tr>
        @foreach($res as $v)
       <tr>
-      <td>{{$v->client_name}}</td>
-      <td>{{$v->client_ma}}</td>
-      <td>{{$v->client_jian}}</td>
-      <td>{{$v->fangshi}}</td>
-      <td>{{$v->com}}</td>
-      <td>{{$v->shuxing}}</td>
-      <td>{{$v->xingzhi}}</td>
-      <td>{{$v->desc}}</td>
-      
+      <td>{{$v->c_name}}</td>
+      <td>{{$v->c_sex}}</td>
+      <td>{{$v->c_aihao}}</td>
        </tr>
        @endforeach
       </table>

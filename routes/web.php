@@ -14,11 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('index/index','Index\Index@index');
+Route::get('index/index','Index\Index@index')->middleware('auth');
 
-Route::get('/index/Sel/index','Index\Sel@index');
-Route::get('/index/Sell/index','Index\Sell@index');
-Route::post('/index/Sel/indexs','Index\Sel@indexs');
+Route::get('/index/Sel/index','Index\Sel@index')->middleware('auth');
+Route::get('/index/Sell/index','Index\Sell@index')->middleware('auth');
+Route::post('/index/Sel/indexs','Index\Sel@indexs')->middleware('auth');
+Route::post('/index/Sel/indexd','Index\Sel@indexd');
+Route::post('/index/Sel/indext','Index\Sel@indext');
 
    
 
