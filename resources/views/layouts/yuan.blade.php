@@ -67,7 +67,7 @@
    <dl>
     <dt>联系人信息管理</dt>
     <dd><a href="{{url('index/create')}}">新建联系人</a></dd>
-    <dd><a href="{{url('idnex/list')}}">联系人信息管理</a></dd>
+    <dd><a href="{{url('index/list')}}">联系人信息管理</a></dd>
    </dl>
   </li>
   <li>
