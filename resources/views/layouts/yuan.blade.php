@@ -6,6 +6,7 @@
 <meta name="keywords" content="html5后台管理模板,企业后台模板,cms后台管理系统,cms网站管理系统,cms后台模板" />
 <meta name="description" content="绿色清爽的HTML5通用后台管理系统模板。" />
 <meta name="author" content="DeathGhost" />
+<link rel="stylesheet" href="/static/index/Css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="/static/index/Css/style.css">
 <!--[if lt IE 9]>
 <script src="/static/index/Scripts/html5.js"></script>
@@ -57,8 +58,8 @@
    <dl>
     <dt>客户信息管理</dt>
     <!--当前链接则添加class:active-->
-    <dd><a href="product_list.html" class="active">新建客户</a></dd>
-    <dd><a href="product_detail.html">客户信息管理</a></dd>
+    <dd><a href="{{url('/client/create')}}">新建客户</a></dd>
+    <dd><a href="{{url('/client/index')}}">客户信息管理</a></dd>
     
    </dl>
   </li>
@@ -78,24 +79,21 @@
   <li>
    <dl>
     <dt>客户服务记录</dt>
-    <dd><a href="setting.html">客户服务记录</a></dd>
+    <dd><a href="{{url('/redcord/create')}}">客户服务记录</a></dd>
    </dl>
   </li>
   <li>
    <dl>
     <dt>综合查询</dt>
-    <dd><a href="setting.html">客户查询</a></dd>
-    <dd><a href="setting.html">客户服务记录查询</a></dd>
-     <dd><a href="setting.html">客户投诉记录查询</a></dd>
-      <dd><a href="setting.html">客户报价查询</a></dd>
+    <dd><a href="{{url('/index/Sel/index')}}">综合查询</a></dd>
+   
+
    </dl>
-  </li>
-   <p class="btm_infor">© DeathGhost.cn 版权所有</p>
-  </li>
+ 
  </ul>
 </aside>
- @yield('content')
+@yield('content')
 
-</script>
+    </script>
 </body>
 </html>
